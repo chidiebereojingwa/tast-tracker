@@ -34,7 +34,7 @@ export default function Homepage() {
     }
   return (
     <div>
-      <Exerciseslist exercises={exercises} onDeleteExercise={onDeleteExerciseHandler}/>
+      <Exerciseslist onToggleExercise={toggleExerciseCompletionHandle} exercises={exercises} onDeleteExercise={onDeleteExerciseHandler}/>
     </div>
   )
 }
