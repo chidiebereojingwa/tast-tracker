@@ -30,6 +30,7 @@ export default function Homepage() {
       const clickedExerciseIndex = clonedExercises.findIndex((exercises) => exercises.id === id);
       const clickedExercise = clonedExercises[clickedExerciseIndex];
       clickedExercise.complete = !clickedExercise.complete;
+      setexercises(clonedExercises);
     }
   return (
     <div>
