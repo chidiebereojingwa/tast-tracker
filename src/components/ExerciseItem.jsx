@@ -3,7 +3,14 @@ import "./ExercisesItem.css"
 
 export default function ExerciseItem({exercise, onDeleteExercise}) {
   const performExerciseDeletion = () => {
-    onDeleteExercise(exercise.id)
+    fetch(`http://localhost:3111/exercises/${exercise.id}`, {
+      method: 'DELETE',
+    })
+    .then(() => {
+      onDeleteExercise(exercise.id);
+    })
+    .catch((error) => console.log(error))
+    
   }
   return (
     <div className="exercise">
