@@ -2,7 +2,7 @@ import React from 'react'
 import ExerciseItem from './ExerciseItem'
 import "./ExercisesList.css"
 
-export default function Exerciseslist({exercises}) {
+export default function Exerciseslist({exercises,onDeleteExercise}) {
     if(exercises.length === 0) return null 
 
   return (

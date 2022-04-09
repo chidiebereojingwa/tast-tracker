@@ -19,12 +19,13 @@ export default function Homepage() {
 
     },[]);
 
-    const onDeleteExerciseHandler = () => {
-      const patchedExercises = exercises.filter((exercises) !== )
+    const onDeleteExerciseHandler = (id) => {
+      const patchedExercises = exercises.filter((exercises) => exercises.id !== id );
+      setexercises(patchedExercises);
     }
   return (
     <div>
-      <Exerciseslist exercises={exercises}/>
+      <Exerciseslist exercises={exercises} onDeleteExercise={onDeleteExerciseHandler}/>
     </div>
   )
 }

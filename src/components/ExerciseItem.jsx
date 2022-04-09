@@ -2,7 +2,7 @@ import React from 'react'
 import "./ExercisesItem.css"
 
 export default function ExerciseItem({exercise, onDeleteExercise}) {
-  const performExerciseDeletion () => {
+  const performExerciseDeletion = () => {
     onDeleteExercise(exercise.id)
   }
   return (
