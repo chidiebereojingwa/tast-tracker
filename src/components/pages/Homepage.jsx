@@ -18,6 +18,10 @@ export default function Homepage() {
         fetchExercises();
 
     },[]);
+
+    const onDeleteExerciseHandler = () => {
+      const patchedExercises = exercises.filter((exercises) !== )
+    }
   return (
     <div>
       <Exerciseslist exercises={exercises}/>
