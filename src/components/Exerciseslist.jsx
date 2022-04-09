@@ -8,7 +8,7 @@ export default function Exerciseslist({exercises}) {
   return (
     <div className="exercises-list">
       {exercises.map(exercise=>(
-      <ExerciseItem key={exercise.id} exercise={exercise}/>)
+      <ExerciseItem key={exercise.id} exercise={exercise} onDeleteExercise={onDeleteExercise}/>)
       )
       }
     </div>
