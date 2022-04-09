@@ -23,6 +23,14 @@ export default function Homepage() {
       const patchedExercises = exercises.filter((exercises) => exercises.id !== id );
       setexercises(patchedExercises);
     }
+
+    const toggleExerciseCompletionHandle = (id) => {
+      console.log('id is:', id);
+      const clonedExercises = [...exercises];
+      const clickedExerciseIndex = clonedExercises.findIndex((exercises) => exercises.id === id);
+      const clickedExercise = clonedExercises[clickedExerciseIndex];
+      clickedExercise.complete = !clickedExercise.complete;
+    }
   return (
     <div>
       <Exerciseslist exercises={exercises} onDeleteExercise={onDeleteExerciseHandler}/>
