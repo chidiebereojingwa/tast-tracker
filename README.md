@@ -1,16 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# HTML/CSS/JS Capstone Project 
-EASYSEND FIRST INTERNATIONAL CONFERENCE
+# REACT/JS TASK TRACKER Project 
+TASK TRACKER
 
-This website is a work of fiction. Any similarity to actual persons, or actual events, is purely coincidental.
 
 
 ![screenshot](./app_screenshot.png)
 
 ## Built With
-HTML
-CSS
+REACT
 JavaScript
 Linters
 ### Setup
