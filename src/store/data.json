@@ -1,4 +1,10 @@
 {
-  "exercises": []
+  "exercises": [
+    {
+      "title": "Lorem Ipsum",
+      "details": "At church” usually refers to the activity of attending a religious service, usually in a building, and usually presided over by a preacher, bishop, or priest.",
+      "complete": false,
+      "id": 7581
+    }
+  ]
 }
- 
