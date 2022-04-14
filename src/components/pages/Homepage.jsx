@@ -8,11 +8,9 @@ export default function Homepage() {
             try {
                const response = await fetch('http://localhost:3111/exercises');
                const fetchedExercises = await response.json();
-               console.log("here are the exercises that we fetched...",fetchedExercises)
                setexercises(fetchedExercises)
             } catch (error) {
-              console.log(error)
-                
+              console.log(error)                
             }
         } 
         fetchExercises();
