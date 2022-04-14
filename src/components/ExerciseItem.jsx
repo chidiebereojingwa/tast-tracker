@@ -16,8 +16,13 @@ export default function ExerciseItem({exercise, onDeleteExercise}) {
   const performExerciseToggle = () => {
     onToggleExercise(exercise.id)
   }
+
+  const classes = ['exercise'];
+  if(exercise.complete){
+    classes.push('complete')
+  }
   return (
-    <div className="exercise">
+    <div className={classes.join('')}>
     <div className="actions">
       <h4>{exercise.title}</h4>
       <div className="buttons">
