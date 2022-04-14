@@ -7,11 +7,14 @@ export default function Exerciseslist({exercises,onDeleteExercise}) {
 
   return (
     <div className="exercises-list">
-      {exercises.map(exercise=>(
-      <ExerciseItem key={exercise.id} exercise={exercise} onDeleteExercise={onDeleteExercise}/>)
-      )
-      }
+      {exercises.map((exercise) => (
+        <ExerciseItem
+          key={exercise.id}
+          onToggleExercise={onToggleExercise}
+          exercise={exercise}
+          onDeleteExercise={onDeleteExercise}
+        />
+      ))}
     </div>
-  
-  )
+  );
 }

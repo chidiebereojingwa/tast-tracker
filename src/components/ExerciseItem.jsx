@@ -14,7 +14,7 @@ export default function ExerciseItem({exercise, onDeleteExercise}) {
   }
 
   const performExerciseToggle = () => {
-    
+    onToggleExercise(exercise.id)
   }
   return (
     <div className="exercise">
